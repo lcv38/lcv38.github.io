@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannonball Run — Finish</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="finish">
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>CANNONBALL RUN</h1>
+        <div class="tag">Checkpoint 5 — Los Angeles (Finish). Your ending is determined here.</div>
+      </div>
+      <nav class="nav">
+        <a class="pill" href="index.html">Restart</a>
+      </nav>
+    </header>
+
+    <main class="card hero">
+      <h2>Checkpoint 5 — Los Angeles (Finish)</h2>
+      <p>
+        LA appears like a mirage made of billboards and warm air. Your hands smell like steering wheel.
+        Your brain is half coffee. Your soul is half “I can’t believe that worked.”
+      </p>
+
+      <div class="grid">
+        <section class="card block">
+          <div class="meta">
+            <span>time pts: <span id="timePts">0</span></span>
+            <span>risk pts: <span id="riskPts">0</span></span>
+            <span>checkpoint: 5/5</span>
+          </div>
+
+          <div class="note">
+            <b>Final Roll:</b> This button uses real randomness + your accumulated Risk/Time to decide:
+            record / finish / DNF.
+          </div>
+
+          <div class="choice">
+            <button id="rollBtn">Reveal My Ending</button>
+          </div>
+
+          <hr />
+          <p class="small">
+            Fictional time estimate: <b><span id="hrs">—</span> hours</b>
+            &nbsp;•&nbsp; Fictional record: <b><span id="rec">—</span> hours</b>
+            <br><span class="small">Chaos note: <span id="why">—</span></span>
+          </p>
+
+          <div id="endRecord" class="note" style="display:none;">
+            <b>ENDING 1: YOU BREAK THE RECORD.</b>
+            <p class="small">
+              You cross the finish line and the city doesn’t even notice—because the city is busy being LA.
+              But your crew notices. The stopwatch notices. The universe notices, and for once, it doesn’t argue.
+              <br><br>
+              People will say it was the car, the route, the luck. They’re wrong.
+              It was you deciding, finally, to be ridiculous on purpose—without becoming a cautionary tale.
+            </p>
+            <p class="small"><a href="index.html">Run it again</a> (try a different path and see if chaos changes everything).</p>
+          </div>
+
+          <div id="endFinish" class="note" style="display:none;">
+            <b>ENDING 2: YOU FINISH — BUT NOT THE RECORD.</b>
+            <p class="small">
+              You did it. Coast to coast. Not a myth, not a group chat fantasy—real miles, real hours.
+              The record stays unbroken, sitting up there like a smug statue.
+              <br><br>
+              But you finish with the car intact and your story intact, which is rarer than it sounds.
+              You didn’t win the legend. You became your own version of it.
+            </p>
+            <p class="small"><a href="index.html">Try again</a> (one cleaner choice can change the math… unless the universe does something petty).</p>
+          </div>
+
+          <div id="endDNF" class="danger" style="display:none;">
+            <b>ENDING 3: DNF — YOU HAVE TO GIVE UP.</b>
+            <p class="small">
+              It happens fast. Not dramatic like a movie—just one moment where reality pulls the emergency brake, and you have to pull over. Maybe it’s a mechanical failure, maybe it’s a cop, maybe it’s the heat. Maybe it’s all three, because the universe loves a combo move. 
+              <br><br>
+              You sit on the shoulder, watching the horizon keep moving without you.
+              The dream doesn’t die. It just gets heavier.
+            </p>
+            <p class="small"><a href="index.html">Restart</a> (the dream loves a rematch).</p>
+          </div>
+        </section>
+
+        <aside class="card block">
+          <figure>
+            <img src="https://bucket-files.city-sightseeing.com/blog/2023/05/los-angeles-city-skyline.jpg" alt="Los Angeles skyline">
+            <figcaption>LA: the finish line that looks like a postcard and feels like an exhausted exhale.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

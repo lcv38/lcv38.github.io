@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannonball Run — Checkpoint 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>CANNONBALL RUN</h1>
+        <div class="tag">Checkpoint 1 — leaving the city behind, picking up momentum (and consequences).</div>
+      </div>
+      <nav class="nav">
+        <a class="pill" href="index.html">Restart</a>
+      </nav>
+    </header>
+
+    <main class="card hero">
+      <h2>Checkpoint 1 — Pennsylvania Turnpike Energy</h2>
+      <p>
+        You’ve escaped NYC. Your navigation app is confident in a way that feels personal.
+        The highway is open. The coffee is suspicious. Your car hums like it’s proud of you.
+        That’s when you realize: pride is how machines lure humans into storytelling.
+      </p>
+
+      <div class="grid">
+        <section class="card block">
+          <div class="meta">
+            <span>time pts: <span id="timePts">0</span></span>
+            <span>risk pts: <span id="riskPts">0</span></span>
+            <span>checkpoint: 1/5</span>
+          </div>
+
+          <blockquote>
+            Your brain says: “Be smart.”
+            <br>Your heart says: “Be legendary.”
+            <br>Your car says: “I can do anything (until I can’t).”
+          </blockquote>
+
+          <div class="choice">
+            <button onclick="go('cp2.html', +3, +1)">
+              Strategy: “Smooth Operator” — keep speed consistent, pass only when clean, no drama.
+            </button>
+            <button onclick="go('cp2.html', +5, +4)">
+              Strategy: “Passing Is My Personality” — assertive moves, faster progress, higher risk.
+            </button>
+            <button onclick="go('cp2.html', +1, -1)">
+              Strategy: “Stealth Mode” — you blend in, reduce risk, accept slower pace.
+            </button>
+          </div>
+
+          <div class="note">
+            <b>Checkpoint rule:</b> No random event yet. You’re still in the “opening montage.”
+          </div>
+        </section>
+
+        <aside class="card block">
+          <figure>
+            <img src="https://preview.redd.it/abandoned-pennsylvania-turnpike-a-13-mile-stretch-of-v0-fl6xobtdf63a1.jpg?width=640&crop=smart&auto=webp&s=42816bbb5ae3246354b76ed8b15f786d3991521f" alt="Highway road">
+            <figcaption>Early miles feel infinite—until you realize the country is not a straight line, it’s a negotiation.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

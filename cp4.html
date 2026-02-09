@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannonball Run — Checkpoint 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>CANNONBALL RUN</h1>
+        <div class="tag">Checkpoint 4 — Rockies / Desert: where the car asks, “So… you sure about this?”</div>
+      </div>
+      <nav class="nav">
+        <a class="pill" href="index.html">Restart</a>
+      </nav>
+    </header>
+
+    <main class="card hero">
+      <h2>Checkpoint 4 — Colorado → Nevada (The Crunch)</h2>
+      <p>
+        Mountains become desert. Air gets thinner. Your playlist gets dramatic on its own.
+        You’ve come too far to “maybe” anything.
+        The finish line is a magnet. Your mistakes are also magnets.
+      </p>
+
+      <div class="grid">
+        <section class="card block">
+          <div class="meta">
+            <span>time pts: <span id="timePts">0</span></span>
+            <span>risk pts: <span id="riskPts">0</span></span>
+            <span>checkpoint: 4/5</span>
+          </div>
+
+          <div class="note">
+            <b>Chance Event:</b> The “Desert Lottery.” You might get a miracle, a delay, or heat.
+          </div>
+
+          <div class="choice">
+            <button onclick="
+              (function(){
+                const roll = Math.random();
+                // 60% good: clear run; 25% delay; 15% big trouble (adds a lot of risk)
+                if(roll < 0.60) go('finish.html', +4, +2);
+                else if(roll < 0.85) go('finish.html', +1, +3);
+                else go('finish.html', -2, +7);
+              })();
+            ">
+              Roll the Desert Lottery
+            </button>
+          </div>
+
+          <p class="small">
+            Your “finish” page will determine the ending using your <b>choices + risk</b>… plus a small chance the universe flips the table.
+          </p>
+        </section>
+
+        <aside class="card block">
+          <figure>
+            <div class="media">
+    <img src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fad3e2edc-1361-11ed-a669-519b582f91b7.jpg?crop=800%2C1000%2C350%2C0"
+         alt="Desert road"
+         loading="lazy"
+         referrerpolicy="no-referrer">
+            </div>
+            <figcaption>Desert roads don’t look fast—until you realize they’re empty enough to make you forget consequences exist.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

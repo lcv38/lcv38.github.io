@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannonball Run — NYC Start</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>CANNONBALL RUN: NYC → LA</h1>
+        <div class="tag">
+          A funny, epic, chaotic hypertext fiction about a driver chasing a legendary coast-to-coast record—fictionalized, dramatized, and powered by bad decisions.
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="pill" href="index.html">Start</a>
+      </nav>
+    </header>
+
+    <main class="card hero">
+      <h2>Checkpoint 0 — New York City (Start)</h2>
+      <p>
+        It’s 3:41 AM. Manhattan looks like it’s running on espresso and unresolved ambition.
+        You’re not a superhero. Your car isn’t a spaceship. It’s a <b>realistic</b> machine: a used-but-healthy
+        <b>BMW M340i</b> with enough power to be tempting and enough cupholders to be a moral hazard.
+      </p>
+
+      <blockquote>
+        Your dream: <b>break the record</b> (fictional, for story purposes).
+        <br>Your fear: finishing the race as a cautionary tale on four bald tires.
+      </blockquote>
+
+      <div class="grid">
+        <section class="card block">
+          <div class="meta">
+            <span>time pts: <span id="timePts">0</span></span>
+            <span>risk pts: <span id="riskPts">0</span></span>
+            <span>route: NYC → LA</span>
+          </div>
+
+          <p class="small">
+            Your choices affect:
+            <br>• <b>Time Points</b> (higher = faster story outcome)
+            <br>• <b>Risk Points</b> (higher = more chaos; increases chance of random disasters later)
+          </p>
+
+          <div class="choice">
+            <button onclick="go('cp1.html', +4, +2)">
+              Plan A: “Precision Gremlin” — aggressive but organized. Pre-mapped fuel stops. Minimal nonsense.
+            </button>
+            <button onclick="go('cp1.html', +6, +6)">
+              Plan B: “Chaos Consultant” — maximum pace, minimum planning. You trust vibes. Vibes are unlicensed.
+            </button>
+            <button onclick="go('cp1.html', +2, +0)">
+              Plan C: “Survive & Finish” — steady pace, clean driving, no hero moments.
+            </button>
+          </div>
+
+          <p class="small"><b>Note:</b> The truly random stuff doesn’t hit yet. The universe is still loading.</p>
+        </section>
+
+        <aside class="card block">
+          <figure>
+            <img src="https://citydays.com/blog-assets/media/images/Times_Square_New_York_Rain_Night-2.width-800.jpg" alt="New York skyline at night">
+            <figcaption>NYC at night: where dreams are born, and parking tickets reproduce by mitosis.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

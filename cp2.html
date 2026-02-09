@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannonball Run — Checkpoint 2</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>CANNONBALL RUN</h1>
+        <div class="tag">Checkpoint 2 — the Midwest: where the horizon dares you to blink.</div>
+      </div>
+      <nav class="nav">
+        <a class="pill" href="index.html">Restart</a>
+      </nav>
+    </header>
+
+    <main class="card hero">
+      <h2>Checkpoint 2 — Ohio / Indiana Line</h2>
+      <p>
+        The land flattens. Time stretches. You start measuring life in exits and gas stations.
+        Someone at a pump asks, “Where you headed?”
+        You lie with confidence: “Just… visiting a friend.”
+        Your car idles like it’s judging your improv.
+      </p>
+
+      <div class="grid">
+        <section class="card block">
+          <div class="meta">
+            <span>time pts: <span id="timePts">0</span></span>
+            <span>risk pts: <span id="riskPts">0</span></span>
+            <span>checkpoint: 2/5</span>
+          </div>
+
+          <blockquote>
+            This is where “plan” meets “reality.”
+            <br><em>Reality brought snacks and chaos.</em>
+          </blockquote>
+
+          <div class="note">
+            <b>Chance Event (real random):</b> click one button — the story will randomly pick your outcome.
+          </div>
+
+          <div class="choice">
+            <button onclick="
+              (function(){
+                const roll = Math.random();
+                // 70% good: clean stretch; 20% annoying: minor delay; 10% bad: major heat
+                if(roll < 0.70) go('cp3.html', +4, +1);
+                else if(roll < 0.90) go('cp3.html', +1, +2);
+                else go('cp3.html', -1, +5);
+              })();
+            ">
+              Roll the Midwest Dice
+            </button>
+          </div>
+
+          <p class="small">
+            Possible chaos examples (you won’t know which you got until next checkpoint):
+            “unexpected construction,” “mystery smell from the engine bay,” or “a police car that appears when you think about speed.”
+          </p>
+        </section>
+
+        <aside class="card block">
+          <figure>
+            <img src="https://img.freepik.com/premium-photo/aerial-view-agricultural-fields-road-rainy-weather_221513-125.jpg" alt="Road by cornfields">
+            <figcaption>The Midwest: one long inhale between decisions.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
