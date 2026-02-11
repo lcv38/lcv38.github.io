@@ -43,7 +43,6 @@
             <button onclick="
               (function(){
                 const roll = Math.random();
-                // 60% good: clear run; 25% delay; 15% big trouble (adds a lot of risk)
                 if(roll < 0.60) go('finish.html', +4, +2);
                 else if(roll < 0.85) go('finish.html', +1, +3);
                 else go('finish.html', -2, +7);
